@@ -1,0 +1,397 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+@media (prefers-reduced-motion: no-preference){
+    *{
+    scroll-behavior: smooth;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#page-wrapper{
+    position: relative;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 62,5rem;
+    background-color: #eee;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 20px;
+    background-color: #aaa;
+
+}
+
+
+#nav-bar > ul {
+    list-style-type: none;
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 10px;
+}
+
+
+#header > img{
+    margin-left: 40px;
+    width: 18%;
+}
+
+
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 28px 40px;
+    text-wrap: nowrap;
+    font-size: 17px;
+    
+}
+
+.nav-link:hover{
+    background-color: ligtgrey;
+    transition: background-color 0.5s;
+    
+}
+
+main{
+    margin-top: 100px;    
+}
+
+
+label{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+
+.email-input > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#email{
+    height: 1.8rem;
+    width: 14vw;
+    max-width: 275px;
+    padding: 5px;
+}
+
+#submit{
+    border: none;
+    width: 7vw;
+    height: 1.6vw;
+    background-color: #f1c40f;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 10px;
+    max-width: 150px;
+}
+
+#submit:hover{
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+}
+
+#features{
+    margin-top: 68px;
+    text-align: center;
+}
+
+.icon{
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 200px;
+    height: 125px;
+
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 42vw;
+    text-align: left;
+    font-size: 17px;
+    height: 125px;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.subtitle{
+    font-size: 16px;
+}
+
+#how-it-works{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+}
+
+#pricing{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.product{
+    border: 1px solid black;
+    width: calc(100% / 6);
+    height: 320px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.product-title{
+    padding: 15px;
+    background-color: lightgrey;
+    font-size: 16px;
+}
+
+.product-price{
+    padding: 15px;
+}
+
+ul > li {
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+.product > button {
+    margin-top: 30px;
+    border: none;
+    width: 5vw;
+    height: 2vw;
+    background-color: #f1c40f;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product > button:hover{
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 10px;
+    bottom: 0;
+    position: relative;
+    
+}
+
+footer > ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer > ul > li {
+    
+    cursor: pointer; 
+}
+
+li > a{
+    text-decoration: none;
+    color: black;
+    padding: 25px 20px;
+    position: relative;
+    bottom: -4px;
+    
+}
+
+li > a:hover{
+    background-color: lightgrey;
+    transition: background-color 1s;
+}
+
+footer > span {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    color: #444;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+@media (min-width: 700px) and (max-width: 850px) {
+    #header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        margin: 0;
+        padding: 0px;
+        background-color: #aaa;
+        padding: 10px;
+    }
+
+    #nav-bar > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        bottom: 13px;
+        
+
+    }
+
+
+    #header > img{
+        margin-left: 40px;
+        width: 30%;
+    }
+    
+    
+    .nav-link{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 18.5px 20px;
+    }
+
+    .nav-link:hover{
+        background-color: lightgrey;
+        transition: background-color 0.5s;  
+    
+    }
+    
+    main{
+        margin-top: 100px;    
+    }
+
+    .email-input > form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #email{
+        height: 1.8rem;
+        width: 26vw;
+        max-width: 275px;
+        padding: 5px;
+    }
+
+    #submit{
+        border: none;
+        width: 16vw;
+        height: 3.1vw;
+        background-color: #f1c40f;
+        font-size: 15px;
+        font-weight: bolder;
+        cursor: pointer;
+        margin-top: 10px;
+        max-width: 150px;
+    }
+    
+    #submit:hover{
+        background-color: orange;
+        transition: background-color 1s;
+    }
+    
+    .icon{
+        color: orange;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 160px;
+        height: 125px;
+        position: relative;
+        right: 15px;
+        z-index: -1;
+    }
+    
+    .desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 42vw;
+        text-align: left;
+        font-size: 17px;
+        height: 125px;
+    }
+    
+    .title{
+        font-size: 25px;
+    }
+    
+    .subtitle{
+        font-size: 16px;
+    }
+    
+    .product > button {
+        margin-top: 30px;
+        border: none;
+        width: 12vw;
+        height: 5vw;
+        background-color: #f1c40f;
+        text-transform: capitalize;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 20px auto;
+      margin-bottom: 10px;
+    }
+}
+
+  @media (max-width: 700px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
